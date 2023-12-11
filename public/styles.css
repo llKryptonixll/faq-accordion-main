@@ -92,35 +92,35 @@ h1{
     color: var(--dark_purple);
 }
 
-.faq-card__list{
+.faq-card-list{
     display: grid;
     gap: 50px;
 }
-.faq-card__list__header{
+.faq-card-list__header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
 }
-.faq-card__list__header__minus__icon{
+.faq-card-list__header .minus-icon{
     display: none;
 }
-.faq-card__list__header h2{
+.faq-card-list__header h2{
     color: var(--dark_purple);
     transition: 250ms;
 }
-.faq-card__list__header img{
+.faq-card-list__header img{
     margin-left: 30px;
 }
-.faq-card__list__header h2:hover{
+.faq-card-list__header h2:hover{
     color: var(--light_purple);
     transition: 250ms;
 }
-.faq-card__list li{
+.faq-card-list li{
     display: grid;
     gap: 15px;
 }
-.faq-card__list__body{
+.faq-card-list__body{
     color: var(--grayish_purple);
     display: none;
 }

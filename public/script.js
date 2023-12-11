@@ -1,4 +1,4 @@
-const openAccordionButtons = document.querySelectorAll(".open_accordion_btn");
+const openAccordionButtons = document.querySelectorAll("[data-accordion-button]");
 openAccordionButtons.forEach((btn, index) => {
     btn.addEventListener("click", () => {
         handleClick(index);
@@ -6,9 +6,9 @@ openAccordionButtons.forEach((btn, index) => {
 });
 
 function handleClick (index) {
-    const accordionBody = document.querySelectorAll(".accordion_body_js");
-    const minusIcons = document.querySelectorAll(".minus_icon_js");
-    const plusIcons = document.querySelectorAll(".plus_icon_js");
+    const accordionBody = document.querySelectorAll("[data-card-body]");
+    const minusIcons = document.querySelectorAll("[data-minus-icon]");
+    const plusIcons = document.querySelectorAll("[data-plus-icon]");
 
     toggleVisibleElements(accordionBody, "none", "block", index);
     toggleVisibleElements(minusIcons, "none", "block", index);
